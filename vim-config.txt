@@ -1,0 +1,43 @@
+set visualbell t_vb=
+if has("autocmd") && has("gui")
+    au GUIEnter * set t_vb=
+endif
+
+set number
+set numberwidth=1
+set clipboard=unnamed
+syntax enable
+set showcmd
+set ruler
+set encoding=utf-8
+set showmatch
+set hlsearch
+set sw=2
+set tabstop=2
+set expandtab
+
+let mapleader=" "
+nnoremap <Leader>> 10<C-w>>
+noremap <Leader>< 10<C-w><
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>Q :q!<CR>
+
+" tabs navigation
+map <Leader>h :tabprevious<cr>
+map <Leader>l :tabnext<cr>
+
+
+call plug#begin('~/.vim/plugged')
+
+" themes
+Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
+
+call plug#end()
+
+"colorscheme gruvbox
+"let g:gruvbox_contrast_dark = "hard"
+
+nmap <Leader>m :NERDTreeToggle<CR>
