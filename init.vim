@@ -13,7 +13,9 @@ endif
 :set mouse=a
 :set nowrap
 :set hlsearch
-
+:set colorcolumn=80
+:set clipboard=unnamed
+:set guifont=Monospace:h20
 
 call plug#begin()
 
@@ -37,9 +39,14 @@ call plug#end()
 
 let mapleader = " "
 
+" tabs
+nnoremap tn :tabnew<CR>
+nnoremap H gT
+nnoremap L gt
+
 " resize buffer
-nnoremap <Leader>< 10<C-w><
-noremap <Leader>> 10<C-w>>
+nnoremap <Leader>> 10<C-w>>
+noremap <Leader>< 10<C-w><
 
 " save and quit
 nnoremap <Leader>w :w<CR>
@@ -51,11 +58,15 @@ nnoremap <Leader>f :NERDTreeFocus<CR>
 nnoremap <Leader>m :NERDTreeToggle<CR>
 
 " FZF key bindings
-nnoremap <C-f> :FZF<CR>
+nnoremap <Leader>p :FZF<CR>
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-i': 'split',
   \ 'ctrl-v': 'vsplit' }
 
 " terminal
-:tnoremap <Esc> <C-\><C-n> 
+:tnoremap <Leader>x <C-\><C-n> 
+
+"new buffer
+nnoremap <Leader>n :new<CR>
+nnoremap <Leader>vs :vnew<CR>
