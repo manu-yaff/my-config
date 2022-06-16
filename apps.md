@@ -1,0 +1,3 @@
+- iterm
+- snap (change to specific apps)
+- tiles
