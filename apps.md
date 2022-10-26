@@ -1,3 +1,4 @@
 - iterm
-- snap (change to specific apps)
+- apptative
 - tiles
+- alfred
