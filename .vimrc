@@ -1,1 +1,0 @@
-/Users/yaf/.config/nvim/init.vim
