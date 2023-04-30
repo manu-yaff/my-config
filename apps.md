@@ -1,6 +1,12 @@
 Apps & tools for development
 
-- Terminal: iterm or alacritty
+- Homebrew
+
+- Zsh: for the git aliases
+
+- Terminal: Alacrity with Starship theme
+
+- FireCode Nerd Font
 
 - Rectangle: simple macos window manager
 
