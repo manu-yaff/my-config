@@ -1,3 +1,4 @@
+
 vim.g.mapleader = " "
 
 -- open tree
@@ -36,9 +37,8 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 -- search
 vim.keymap.set("n", "<leader>s", [[:%s/]])
 
--- navigate between panes
--- vim.keymap.set("n", "<C-h>", "<C-w>h")
--- vim.keymap.set("n", "<C-j>", "<C-w>j")
--- vim.keymap.set("n", "<C-k>", "<C-w>k")
--- vim.keymap.set("n", "<C-l>", "<C-w>l")
+-- file tree
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 
+-- fix all eslint problems
+vim.keymap.set("n", "<leader>i", ":EslintFixAll<CR>")
