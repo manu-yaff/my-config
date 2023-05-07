@@ -1,18 +1,33 @@
-Apps & tools for development
+# How to get started in new mac
 
-- Homebrew
+1. Install homebrew
+    - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-- Zsh: for the git aliases
+2. Install alacritty
+    - brew install --cask alacritty
+    - add alacritty yaml
+    - install catpuccin theme for alacritty:
+        - git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 
-- Terminal: Alacrity with Starship theme
+3. Install font to be used for alacritty
+    - brew install --cask font-fira-code-nerd-font
 
-- FireCode Nerd Font
+4. Install starthip for the terminal theme
+    - brew install starship
 
-- Rectangle: simple macos window manager
+5. Install rectangle for window management:
+    - brew install --cask rectangle
 
-- Hotkey: apple store app for gloobal hotkeys
+6. Install HotKey from AppStore for switching apps with keymap
+    - https://apps.apple.com/us/app/hotkey-app/id975890633?mt=12
 
-- Neovim: editor code
+7. Add zshrc
+    - add basic aliases
+    - add starship initialization
 
-- Tmux, window manager for the terminal
+8. Install tmux for window management in the terminal
+    - add tmux conf file
 
+9. Install neovim
+    - brew install neovim
+    - add lua config
